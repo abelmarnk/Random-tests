@@ -1,0 +1,24 @@
+[package]
+name = "random-tests"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "random_tests"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+
+[dependencies]
+anchor-lang = "0.31.1"
+
+[dev-dependencies]
+mollusk-svm = "0.5.1"
+solana-sdk = "2.1.0"
+
